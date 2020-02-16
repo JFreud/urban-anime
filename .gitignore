@@ -8,6 +8,8 @@ __pycache__/
 
 # Toot
 anime-recommendations-database/
+anime.csv
+rating.csv
 
 # Misc
 *~
