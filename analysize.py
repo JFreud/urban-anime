@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from surprise import Dataset, Reader, SVD, BaselineOnly
 from surprise.model_selection import cross_validate
+from surprise import SVD
 
 def init():
     #reader_anime = Reader(line_format='anime_id name genre type episodes rating members', sep=',',skip_lines=1)
@@ -14,4 +15,4 @@ def init():
 
 if __name__ == "__main__":
     rating = init()
-    cross_validate(BaselineOnly(), rating, verbose=True)
+    basic_results = cross_validate(BaselineOnly(), rating, verbose=True)
